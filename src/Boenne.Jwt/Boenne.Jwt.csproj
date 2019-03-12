@@ -7,8 +7,8 @@
     <ProjectGuid>{2B47974A-B1AC-4380-B420-45FE0C05F490}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Jwt</RootNamespace>
-    <AssemblyName>Jwt</AssemblyName>
+    <RootNamespace>Boenne.Jwt</RootNamespace>
+    <AssemblyName>Boenne.Jwt</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

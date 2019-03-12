@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jwt", "Jwt\Jwt.csproj", "{2B47974A-B1AC-4380-B420-45FE0C05F490}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boenne.Jwt", "Boenne.Jwt\Boenne.Jwt.csproj", "{2B47974A-B1AC-4380-B420-45FE0C05F490}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jwt.Tests", "Jwt.Tests\Jwt.Tests.csproj", "{8D755E3A-BFBF-46E6-896F-C768D3735113}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boenne.Jwt.Tests", "Boenne.Jwt.Tests\Boenne.Jwt.Tests.csproj", "{8D755E3A-BFBF-46E6-896F-C768D3735113}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
