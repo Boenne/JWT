@@ -1,0 +1,9 @@
+/packages
+/.vs
+*.cache
+*.pubxml
+*.user
+*/bin
+*/obj
+*/PublishProfiles
+*/log
