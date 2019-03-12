@@ -73,9 +73,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Jwt\Jwt.csproj">
+    <ProjectReference Include="..\Boenne.Jwt\Boenne.Jwt.csproj">
       <Project>{2B47974A-B1AC-4380-B420-45FE0C05F490}</Project>
-      <Name>Jwt</Name>
+      <Name>Boenne.Jwt</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

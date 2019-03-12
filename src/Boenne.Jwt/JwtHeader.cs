@@ -1,8 +1,8 @@
 ﻿using System;
-using Jwt.Extensions;
+using Boenne.Jwt.Extensions;
 using Newtonsoft.Json;
 
-namespace Jwt
+namespace Boenne.Jwt
 {
     public class JwtHeader
     {

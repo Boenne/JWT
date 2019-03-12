@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
-using Jwt.Exceptions;
-using Jwt.Extensions;
+using Boenne.Jwt.Exceptions;
+using Boenne.Jwt.Extensions;
 
-namespace Jwt
+namespace Boenne.Jwt
 {
     public class JwtSettings
     {

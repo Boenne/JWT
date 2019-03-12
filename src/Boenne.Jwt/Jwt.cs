@@ -1,10 +1,10 @@
 ﻿using System;
-using Jwt.Exceptions;
-using Jwt.Extensions;
+using Boenne.Jwt.Exceptions;
+using Boenne.Jwt.Extensions;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace Jwt
+namespace Boenne.Jwt
 {
     public class Jwt
     {

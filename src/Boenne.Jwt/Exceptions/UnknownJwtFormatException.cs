@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jwt.Exceptions
+namespace Boenne.Jwt.Exceptions
 {
     public class UnknownJwtFormatException : Exception
     {

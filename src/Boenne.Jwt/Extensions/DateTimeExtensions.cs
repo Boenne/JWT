@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jwt.Extensions
+namespace Boenne.Jwt.Extensions
 {
     internal static class DateTimeExtensions
     {

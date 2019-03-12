@@ -1,5 +1,6 @@
 ﻿using System;
-using Jwt.Exceptions;
+using Boenne.Jwt;
+using Boenne.Jwt.Exceptions;
 using Shouldly;
 using Xunit;
 

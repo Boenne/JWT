@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Security.Cryptography;
 using System.Text;
 using Newtonsoft.Json;
 
-namespace Jwt.Extensions
+namespace Boenne.Jwt.Extensions
 {
     internal static class StringExtensions
     {
