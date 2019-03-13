@@ -28,24 +28,24 @@ namespace Boenne.Jwt
             };
 
         /// <summary>
-        ///     Get or set the default hash key/MAC
+        ///     Gets or sets the default hash key/MAC
         /// </summary>
         public static string DefaultHashKey { get; set; } = "TEMPKEY";
 
         /// <summary>
-        ///     Get or set the default time-to-live to be used by JwtHeader.
+        ///     Gets or sets the default time-to-live to be used by <see cref="JwtHeader"/>.
         ///     Default value is 1 day.
         /// </summary>
         public static TimeSpan DefaultTimeToLive { get; set; } = TimeSpan.FromDays(1);
 
         /// <summary>
-        ///     Get or set the default algorithm to be used by JwtHeader.
-        ///     Default value is HS512.
+        ///     Gets or sets the default algorithm to be used by <see cref="JwtHeader"/>.
+        ///     Default value is HS256.
         /// </summary>
         public static string DefaultAlgorithm { get; set; } = "HS256";
 
         /// <summary>
-        ///     Register a hash function for a given algorithm.
+        ///     Registers a hash function for a given algorithm.
         ///     First argument of the hash function should be the string to hash, the second should be the key/MAC.
         /// </summary>
         /// <param name="alg"></param>
@@ -56,7 +56,7 @@ namespace Boenne.Jwt
         }
 
         /// <summary>
-        ///     Get a registered hash function for a given algorithm.
+        ///     Gets a registered hash function for a given algorithm.
         /// </summary>
         /// <param name="alg"></param>
         /// <returns></returns>

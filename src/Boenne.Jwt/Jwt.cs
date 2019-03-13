@@ -27,7 +27,7 @@ namespace Boenne.Jwt
         }
 
         /// <summary>
-        ///     Create a new instance of Jwt using a specified token.
+        ///    Initializes a new instance of <see cref="Jwt"/> using a specified token.
         /// </summary>
         /// <param name="token">A string representation of a JWT</param>
         /// <returns></returns>
@@ -54,7 +54,7 @@ namespace Boenne.Jwt
         }
 
         /// <summary>
-        ///     Create a new instance of Jwt using a specified header and payload.
+        ///     Initializes a new instance of <see cref="Jwt"/> using a specified header and payload.
         /// </summary>
         /// <param name="header"></param>
         /// <param name="payload"></param>
@@ -65,7 +65,7 @@ namespace Boenne.Jwt
         }
 
         /// <summary>
-        ///     Check to see whether or not a string representation of a JWT is valid.
+        ///     Specifies whether or not a string representation of a JWT is valid.
         ///     Set checkExpiration to true to also check that the JWT hasn't expired.
         /// </summary>
         /// <param name="token"></param>
@@ -86,9 +86,9 @@ namespace Boenne.Jwt
         }
 
         /// <summary>
-        ///     Get the header object of the JWT.
+        ///     Gets the header object.
         /// </summary>
-        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="T">The type the header should be deserialized to.</typeparam>
         /// <returns></returns>
         public T GetHeader<T>() where T : JwtHeader
         {
@@ -96,9 +96,9 @@ namespace Boenne.Jwt
         }
 
         /// <summary>
-        ///     Get the payload object of the JWT.
+        ///     Gets the payload object.
         /// </summary>
-        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="T">The type the payload should be deserialized to.</typeparam>
         /// <returns></returns>
         public T GetPayload<T>() where T : JwtPayload
         {
@@ -106,7 +106,7 @@ namespace Boenne.Jwt
         }
 
         /// <summary>
-        ///     Check to see if JWT has expired.
+        ///     Specifies whether or not the token has expired.
         /// </summary>
         /// <returns></returns>
         public bool HasExpired()
@@ -114,11 +114,15 @@ namespace Boenne.Jwt
             return GetHeader<JwtHeader>().HasExpired();
         }
 
+        /// <summary>
+        ///     Converts the value of the current <see cref="Jwt"/> object to its equivalent string representation.
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             if (_header == null) throw new EmptyJwtException("Token contains no header.");
             if (_payload == null) throw new EmptyJwtException("Token contains no payload.");
-
+            
             return $"{_headerBase64}.{_payloadBase64}.{_signature}".UrlEncode();
         }
 
